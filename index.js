@@ -13,10 +13,9 @@ $(document).ready(function () {
     });
 
     //CART BURGER
-    let winSize = $(window.width);
+    let winSize = $(window);
     $(window).on('resize', function(){
         winSize = $(this);
-
         if (winSize.width() < 835) {
             if($('#cart-small').css('display') == 'block') {
                 $('#cart-small').css('display', 'none');
@@ -29,12 +28,13 @@ $(document).ready(function () {
     });
 
 
+
     $(document).on('click','.mobile-cart', function() {
         if($('#navbar-burger').css('display') == 'block') {
             $('#navbar-burger').css('display','none');
         }
 
-        if (winSize.width() < 835) { 
+        if (winSize.width() <= 835) { 
             let cartBurger = $('#cart-mobile');
         
             $(cartBurger).toggle('slow',function(){  
