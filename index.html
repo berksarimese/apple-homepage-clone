@@ -23,13 +23,13 @@
                 <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item">Accessories</a></div>
                 <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item">Support</a></div>
                 <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item nav-search-item"><img src="/images/search-image.svg"></a></div>
-                <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item nav-cart-item"><img src="/images/cart-image.svg"></a></div>   
+                <div class="n-div"><a class="nav-item nav-cart-item mobile-cart"><img src="/images/cart-image.svg"></a></div>   
             </div>
         </nav>
         <nav id="navbar-mobile">
             <div class="n-div"><button class="nav-item logo burger-button"><img src="/images/burger-image.svg" style="height: 23px;"></button></div>
             <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item"><img src="/images/apple-logo.svg" class="logo"></a></div>
-            <div class="n-div"><a href="https://github.com/berksarimese" class="nav-item"><img src="/images/cart-image.svg" class="nav-cart-item"></a></div>
+            <div class="n-div"><a class="nav-item mobile-cart"><img src="/images/cart-image.svg" class="nav-cart-item"></a></div>
         </nav>
         <nav id="navbar-burger">
             <div class="burger-container">
@@ -41,21 +41,48 @@
                         <input type="text" placeholder="Search apple.com"; class="search-input">
                     </div>
                 </div>
-                    <div class="burger-line" style="padding: 10px 0px;"></div>
-                    <div class="burger-link-container">
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Store</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Mac</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">iPad</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">iPhone</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Watch</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">AirPods</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">TV & Home</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Only on Apple</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Accessories</a></div>
-                        <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Support</a></div>
-                    </div>
+                <div class="burger-line" style="padding: 10px 0px;"></div>
+                <div class="burger-link-container">
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Store</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Mac</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">iPad</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">iPhone</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Watch</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">AirPods</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">TV & Home</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Only on Apple</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Accessories</a></div>
+                    <div class="n-div burger-line"><a href="https://github.com/berksarimese" class="nav-item burger-text">Support</a></div>
+                </div>
             </div>
         </nav>
+        <div id="cart-mobile" style="background-color: white;">
+            <div class="burger-container">
+                <div class="bag-empty" style="margin-top: 20px;">Your Bag is empty.</div>
+                <div class="burger-line" style="padding: 10px 0px; border-color: rgba(0, 0, 0, 0.2);"></div>
+                <div class="burger-link-container" style="width: 75%;">
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Bag</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Saved Items</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Orders</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Account</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Sign In</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="cart-small" style="background-color: white;">
+            <div class="burger-container" style="padding-top: 25px;">
+                <div class="bag-empty">Your Bag is empty.</div>
+                <div class="burger-line" style="padding: 10px 0px; border-color: rgba(0, 0, 0, 0.2);"></div>
+                <div class="burger-link-container" style="width: 75%;">
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Bag</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Saved Items</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Orders</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Account</a></div>
+                    <div class="n-div burger-line cart-text"><a href="https://github.com/berksarimese" class="nav-item burger-text cart-text" style="color: #0066CC !important;">Sign In</a></div>
+                </div>
+            </div>
+        </div>
+        
 
         <!--HERO PRODUCTS-->
         <div class="hero-product" style="background-image: url('/images/first-product.jpg');">
