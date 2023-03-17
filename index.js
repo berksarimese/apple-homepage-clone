@@ -51,6 +51,7 @@ $(document).ready(function () {
         
     });
 
+
     //FOOTER
     let foTitle = $('.footer-container-mobile').children('.footer-column').children('.footer-title');
     $(foTitle).click(function(){
